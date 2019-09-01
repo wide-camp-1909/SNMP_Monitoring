@@ -1,0 +1,41 @@
+modules:
+  cisco_aironet:
+    walk:
+      - sysName
+#      - 1.3.6.1.2.1.2.1.0   
+      - 1.3.6.1.2.1.2.2.1.2 #interface name
+      - 1.3.6.1.2.1.31.1.1.1.6 # ifHCInOctets
+      - 1.3.6.1.2.1.31.1.1.1.10 # ifHCOutOctets
+      - 1.3.6.1.2.1.2.2.1.14 # ifInErros
+      - 1.3.6.1.2.1.2.2.1.20 # ifOutErros 
+      - 1.3.6.1.4.1.9.9.109.1.1.1.1.7 # cpmCPUTotal1minRev
+      - 1.3.6.1.2.1.1.3 #sysUpTime
+      - 1.3.6.1.4.1.9.9.48.1.1.1.5 #ciscoMemoryPoolUsed
+      - 1.3.6.1.4.1.9.9.48.1.1.1.6 # ciscoMemoryPoolFree
+
+  fortigate:
+    walk:
+      - sysUpTime
+      - fgSysCpuUsage # cpuusage
+      - fgSysDiskUsage # disk usage
+      - fgSysMemUsage # memory usage
+      - ifInOctets #ifIN
+      - ifOutOctets #ifOut
+      - ifInErrors
+      - ifOutErrors
+
+  cisco_2960l:
+    walk:
+      - sysName
+#      - 1.3.6.1.2.1.2.1.0   
+      - 1.3.6.1.2.1.2.2.1.2 #interface name
+      - 1.3.6.1.2.1.31.1.1.1.6 # ifHCInOctets
+      - 1.3.6.1.2.1.31.1.1.1.10 # ifHCOutOctets
+      - 1.3.6.1.2.1.2.2.1.14 # ifInErros
+      - 1.3.6.1.2.1.2.2.1.20 # ifOutErros 
+      - 1.3.6.1.4.1.9.9.109.1.1.1.1.7 # cpmCPUTotal1minRev
+      - 1.3.6.1.2.1.1.3 #sysUpTime
+      - 1.3.6.1.4.1.9.9.48.1.1.1.5 #ciscoMemoryPoolUsed
+      - 1.3.6.1.4.1.9.9.48.1.1.1.6 # ciscoMemoryPoolFree
+
+     

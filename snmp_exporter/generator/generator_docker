@@ -1,0 +1,5 @@
+ docker run -ti \
+ -v $PWD/../.snmp/mibs:/root/.snmp/mibs \                                              
+ -v $PWD/generator.yml:/opt/generator.yml:ro \                                              
+ -v $PWD/out/:/opt/ \                                              
+ snmp-generator generate
