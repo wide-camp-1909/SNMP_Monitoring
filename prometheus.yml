@@ -4,11 +4,8 @@ global:
   evaluation_interval: 30s
   # scrape_timeout is set to the global default (10s).
   external_labels:
-    region: kanazawa-west-1
-    env: prod
-    team: thinck-center
-    monitor: codelab
-    foo:     bar
+    region: wide-camp
+    env: hotstage
 
 rule_files:
   - rules.yml
@@ -32,7 +29,7 @@ scrape_configs:
   - job_name: node_exporter
     static_configs:
       - labels:
-          type: ThinkCenter
+          type: node_exporter
         targets: 
           - '192.168.2.10:9100'
 
