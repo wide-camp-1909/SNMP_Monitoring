@@ -1,0 +1,89 @@
+# my global config
+global:
+  scrape_interval:     10s
+  evaluation_interval: 30s
+  # scrape_timeout is set to the global default (10s).
+  external_labels:
+    region: kanazawa-west-1
+    env: prod
+    team: thinck-center
+    monitor: codelab
+    foo:     bar
+
+rule_files:
+  - rules.yml
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+      - 192.168.2.10:9093
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ['localhost:9090']
+    relabel_configs:
+     - source_labels: [job]
+       target_label: job     
+     - regex: __scheme__
+       replacement: '${1}'
+       action: labelmap
+
+  - job_name: node_exporter
+    static_configs:
+      - labels:
+          type: ThinkCenter
+        targets: 
+          - '192.168.2.10:9100'
+
+  - job_name: 'aironet'
+    static_configs:
+      - labels:           
+          type: aironet
+        targets:           
+          - '192.168.4.2' # aironet
+    metrics_path: /snmp
+    params:       
+      module: [cisco_aironet]
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 192.168.2.10:9116  # The SNMP exporter's real hostname:port.
+
+  - job_name: 'fortigate'
+    static_configs:
+      - labels:           
+          type: fortigate
+        targets:           
+          - '192.168.2.1' # fortigate
+    metrics_path: /snmp
+    params:       
+      module: [fortigate]
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 192.168.2.10:9116  # The SNMP exporter's real hostname:port.
+
+  - job_name: '2960l'
+    static_configs:
+      - labels:
+          type: 2960l
+        targets:
+          - '192.168.2.2' # cisco 2960l
+    metrics_path: /snmp
+    params:
+      module: [cisco_2960l]
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 192.168.2.10:9116  # The SNMP exporter's real hostname:port.
+
