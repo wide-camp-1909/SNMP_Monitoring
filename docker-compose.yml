@@ -48,11 +48,11 @@ services:
       ports:
          - 3000:3000
       volumes:
-      - grafana-db:/var/lib/grafana
+      - grafana:/var/lib/grafana
       restart: always
       environment:
         TZ: Asia/Tokyo
 volumes:
-   grafana-db:
+   grafana:
      driver: local
     
