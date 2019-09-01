@@ -1,0 +1,31 @@
+groups:
+  - name: InstanceDownAlert
+    rules:
+     - alert: InstanceDown
+       expr: up == 0
+       for: 1m
+       annotations:
+         summary: '{{printf "%.2f" $value}} % of instances are up'
+  - name: node_rules
+    rules:
+     - record: job:up:avg
+       expr: avg without(instance)(up{job="node_exporter"})
+     - alert: InstanceDown
+       expr: up{job="node_exporter"} == 0
+       for: 1h
+       labels:
+         serverity: ticket
+       annotations:
+         summary: 'Instance {{$labels.instance}} of {{$labels.job}} is down.'
+         dashboard: http://some.grafana:3000/dashboard/db/prometheus
+     - alert: ManyInstancesDown
+       expr: avg without(instance)(up{job="node_exporter"}) < 0.5
+       for: 5m
+       labels:
+         serverity: page
+       annotations:
+         summary: 'Only {{printf "%.2f" $value}} % of instances are up'
+         description: >
+           Down instances: {{ range query "up{job=\"node_exporter\"} ==0" }}
+             {{ .Labels.instance }}
+           {{ end }}
