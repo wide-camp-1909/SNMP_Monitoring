@@ -1,0 +1,11 @@
+global:
+  resolve_timeout: 1m
+
+route:
+  receiver: alert-test
+
+receivers:
+ - name: alert-test
+   slack_configs:
+    - api_url: https://hooks.slack.com/services/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
+    
