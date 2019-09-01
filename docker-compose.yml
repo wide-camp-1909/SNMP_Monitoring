@@ -1,0 +1,58 @@
+version: '2'
+services:
+   prometheus:
+      image: prom/prometheus
+      volumes:
+         - ./prometheus.yml:/etc/prometheus/prometheus.yml
+         - ./rules.yml:/etc/prometheus/rules.yml
+      ports:
+         - "9090:9090"
+      restart: always
+      environment:
+        TZ: Asia/Tokyo
+
+   snmpexporter:
+      image: prom/snmp-exporter
+      ports:
+         - "9116:9116"  
+      volumes:
+         - ./snmp_exporter/generator/out/snmp.yml:/etc/snmp_exporter/snmp.yml
+      restart: always
+      environment:
+        TZ: Asia/Tokyo
+   
+   alertmanager:
+      image: prom/alertmanager
+      volumes:
+         - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
+      ports:
+         - "9093:9093"
+      restart: always
+      environment:
+        TZ: Asia/Tokyo
+
+   node_exporter:
+      image: quay.io/prometheus/node-exporter
+      ports: 
+         - "9100:9100"
+      volumes:
+         - /proc:/host/proc
+         - /sys:/host/sys
+         - /:/rootfs
+      environment:
+        TZ: Asia/Tokyo
+      restart: always
+
+   grafana:
+      image: grafana/grafana
+      ports:
+         - 3000:3000
+      volumes:
+      - grafana-db:/var/lib/grafana
+      restart: always
+      environment:
+        TZ: Asia/Tokyo
+volumes:
+   grafana-db:
+     driver: local
+    
