@@ -63,114 +63,115 @@ services:
    com.zabbix.component: "zabbix-server"
    com.zabbix.dbtype: "pgsql"
    com.zabbix.os: "centos"
+ 
+ # zabbix-proxy関連をコメントアウト
+ #zabbix-proxy-sqlite3:
+ # image: zabbix/zabbix-proxy-sqlite3:centos-4.2-latest
+ # ports:
+ #  - "10061:10051"
+ # volumes:
+ #  - /etc/localtime:/etc/localtime:ro
+ #  - /etc/timezone:/etc/timezone:ro 
+ #  - ./zbx_env/usr/lib/zabbix/externalscripts:/usr/lib/zabbix/externalscripts:ro
+ #  - ./zbx_env/var/lib/zabbix/modules:/var/lib/zabbix/modules:ro
+ #  - ./zbx_env/var/lib/zabbix/enc:/var/lib/zabbix/enc:ro
+ #  - ./zbx_env/var/lib/zabbix/ssh_keys:/var/lib/zabbix/ssh_keys:ro
+ #  - ./zbx_env/var/lib/zabbix/mibs:/var/lib/zabbix/mibs:ro
+ #  - ./zbx_env/var/lib/zabbix/snmptraps:/var/lib/zabbix/snmptraps:ro
+ # links:
+ #  - zabbix-server:zabbix-server
+ #  - zabbix-java-gateway:zabbix-java-gateway
+ # ulimits:
+ #  nproc: 65535
+ #  nofile:
+ #   soft: 20000
+ #   hard: 40000
+ # deploy:
+ #  resources:
+ #   limits:
+ #     cpus: '0.70'
+ #     memory: 512M
+ #   reservations:
+ #     cpus: '0.3'
+ #     memory: 256M
+ # env_file:
+ #  - .env_prx
+ #  - .env_prx_sqlite3
+ # user: root
+ # depends_on:
+ #  - zabbix-java-gateway
+ #  - zabbix-snmptraps
+ # networks:
+ #  zbx_net_backend:
+ #   aliases:
+ #    - zabbix-proxy-sqlite3
+ #    - zabbix-proxy-centos-sqlite3
+ #    - zabbix-proxy-sqlite3-centos
+ #  zbx_net_frontend:
+ # stop_grace_period: 30s
+ # labels:
+ #  com.zabbix.description: "Zabbix proxy with SQLite3 database support"
+ #  com.zabbix.company: "Zabbix LLC"
+ #  com.zabbix.component: "zabbix-proxy"
+ #  com.zabbix.dbtype: "sqlite3"
+ #  com.zabbix.os: "centos"
 
- zabbix-proxy-sqlite3:
-  image: zabbix/zabbix-proxy-sqlite3:centos-4.2-latest
-  ports:
-   - "10061:10051"
-  volumes:
-   - /etc/localtime:/etc/localtime:ro
-   - /etc/timezone:/etc/timezone:ro 
-   - ./zbx_env/usr/lib/zabbix/externalscripts:/usr/lib/zabbix/externalscripts:ro
-   - ./zbx_env/var/lib/zabbix/modules:/var/lib/zabbix/modules:ro
-   - ./zbx_env/var/lib/zabbix/enc:/var/lib/zabbix/enc:ro
-   - ./zbx_env/var/lib/zabbix/ssh_keys:/var/lib/zabbix/ssh_keys:ro
-   - ./zbx_env/var/lib/zabbix/mibs:/var/lib/zabbix/mibs:ro
-   - ./zbx_env/var/lib/zabbix/snmptraps:/var/lib/zabbix/snmptraps:ro
-  links:
-   - zabbix-server:zabbix-server
-   - zabbix-java-gateway:zabbix-java-gateway
-  ulimits:
-   nproc: 65535
-   nofile:
-    soft: 20000
-    hard: 40000
-  deploy:
-   resources:
-    limits:
-      cpus: '0.70'
-      memory: 512M
-    reservations:
-      cpus: '0.3'
-      memory: 256M
-  env_file:
-   - .env_prx
-   - .env_prx_sqlite3
-  user: root
-  depends_on:
-   - zabbix-java-gateway
-   - zabbix-snmptraps
-  networks:
-   zbx_net_backend:
-    aliases:
-     - zabbix-proxy-sqlite3
-     - zabbix-proxy-centos-sqlite3
-     - zabbix-proxy-sqlite3-centos
-   zbx_net_frontend:
-  stop_grace_period: 30s
-  labels:
-   com.zabbix.description: "Zabbix proxy with SQLite3 database support"
-   com.zabbix.company: "Zabbix LLC"
-   com.zabbix.component: "zabbix-proxy"
-   com.zabbix.dbtype: "sqlite3"
-   com.zabbix.os: "centos"
-
- zabbix-proxy-mysql:
-  image: zabbix/zabbix-proxy-mysql:centos-4.2-latest
-  ports:
-   - "10071:10051"
-  volumes:
-   - /etc/localtime:/etc/localtime:ro
-   - /etc/timezone:/etc/timezone:ro 
-   - ./zbx_env/usr/lib/zabbix/externalscripts:/usr/lib/zabbix/externalscripts:ro
-   - ./zbx_env/var/lib/zabbix/modules:/var/lib/zabbix/modules:ro
-   - ./zbx_env/var/lib/zabbix/enc:/var/lib/zabbix/enc:ro
-   - ./zbx_env/var/lib/zabbix/ssh_keys:/var/lib/zabbix/ssh_keys:ro
-   - ./zbx_env/var/lib/zabbix/mibs:/var/lib/zabbix/mibs:ro
-   - ./zbx_env/var/lib/zabbix/snmptraps:/var/lib/zabbix/snmptraps:ro
-  links:
-   - zabbix-server:zabbix-server
-   - zabbix-java-gateway:zabbix-java-gateway
-  ulimits:
-   nproc: 65535
-   nofile:
-    soft: 20000
-    hard: 40000
-  deploy:
-   resources:
-    limits:
-      cpus: '0.70'
-      memory: 512M
-    reservations:
-      cpus: '0.3'
-      memory: 256M
-  env_file:
-   - .env_db_mysql_proxy
-   - .env_prx
-   - .env_prx_mysql
-  secrets:
-   - MYSQL_USER
-   - MYSQL_PASSWORD
-   - MYSQL_ROOT_PASSWORD
-  user: root
-  depends_on:
-   - mysql-server
-   - zabbix-java-gateway
-   - zabbix-snmptraps
-  networks:
-   zbx_net_backend:
-    aliases:
-     - zabbix-proxy-mysql
-     - zabbix-proxy-centos-mysql
-     - zabbix-proxy-mysql-centos
-   zbx_net_frontend:
-  stop_grace_period: 30s
-  labels:
-   com.zabbix.description: "Zabbix proxy with MySQL database support"
-   com.zabbix.company: "Zabbix LLC"
-   com.zabbix.component: "zabbix-proxy"
-   com.zabbix.dbtype: "mysql"
-   com.zabbix.os: "centos"
+ #zabbix-proxy-mysql:
+ # image: zabbix/zabbix-proxy-mysql:centos-4.2-latest
+ # ports:
+ #  - "10071:10051"
+ # volumes:
+ #  - /etc/localtime:/etc/localtime:ro
+ #  - /etc/timezone:/etc/timezone:ro 
+ #  - ./zbx_env/usr/lib/zabbix/externalscripts:/usr/lib/zabbix/externalscripts:ro
+ #  - ./zbx_env/var/lib/zabbix/modules:/var/lib/zabbix/modules:ro
+ #  - ./zbx_env/var/lib/zabbix/enc:/var/lib/zabbix/enc:ro
+ #  - ./zbx_env/var/lib/zabbix/ssh_keys:/var/lib/zabbix/ssh_keys:ro
+ #  - ./zbx_env/var/lib/zabbix/mibs:/var/lib/zabbix/mibs:ro
+ #  - ./zbx_env/var/lib/zabbix/snmptraps:/var/lib/zabbix/snmptraps:ro
+ # links:
+ #  - zabbix-server:zabbix-server
+ #  - zabbix-java-gateway:zabbix-java-gateway
+ # ulimits:
+ #  nproc: 65535
+ #  nofile:
+ #   soft: 20000
+ #   hard: 40000
+ # deploy:
+ #  resources:
+ #   limits:
+ #     cpus: '0.70'
+ #     memory: 512M
+ #   reservations:
+ #     cpus: '0.3'
+ #     memory: 256M
+ # env_file:
+ #  - .env_db_mysql_proxy
+ #  - .env_prx
+ #  - .env_prx_mysql
+ # secrets:
+ #  - MYSQL_USER
+ #  - MYSQL_PASSWORD
+ #  - MYSQL_ROOT_PASSWORD
+ # user: root
+ # depends_on:
+ #  - mysql-server
+ #  - zabbix-java-gateway
+ #  - zabbix-snmptraps
+ # networks:
+ #   zbx_net_backend:
+ #    aliases:
+ #     - zabbix-proxy-mysql
+ #     - zabbix-proxy-centos-mysql
+ #     - zabbix-proxy-mysql-centos
+ #   zbx_net_frontend:
+ #  stop_grace_period: 30s
+ #  labels:
+ #   com.zabbix.description: "Zabbix proxy with MySQL database support"
+ #   com.zabbix.company: "Zabbix LLC"
+ #   com.zabbix.component: "zabbix-proxy"
+ #   com.zabbix.dbtype: "mysql"
+ #   com.zabbix.os: "centos"
 
  zabbix-web-apache-pgsql:
   image: zabbix/zabbix-web-apache-pgsql:centos-4.2-latest
