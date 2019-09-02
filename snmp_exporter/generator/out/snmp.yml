@@ -1,4 +1,58 @@
 # WARNING: This file was auto-generated using snmp_exporter generator, manual changes will be lost.
+aruba:
+  walk:
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.7
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.8
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.4
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.5
+  metrics:
+  - name: aiAPTotalMemory
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
+    type: gauge
+    help: Total amount of memory available in the AP in bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPCPUUtilization
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.7
+    type: gauge
+    help: Access Point CPU Utilization - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.7
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPMemoryFree
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.8
+    type: gauge
+    help: Amount of memory free in the access point in bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.8
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiRadioChannel
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.4
+    type: DisplayString
+    help: Radio channel - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.4
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioTransmitPower
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.5
+    type: gauge
+    help: Radio transmit power - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.5
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  auth:
+    community: H09R1KU
 cisco:
   walk:
   - 1.3.6.1.2.1.2.2.1.2
@@ -71,78 +125,3 @@ cisco:
       type: gauge
   auth:
     community: H09R1KU
-
-aruba:
-  walk:
-  - 1.3.6.1.4.1.14823.2.3.3.1.2
-  - 1.3.6.1.2.1.2.2.1.7        # ifAdminStatus
-  - 1.3.6.1.2.1.2.2.1.8        # ifOperStatus
-  - 1.3.6.1.2.1.2.2.1.14       # ifInErrors
-  - 1.3.6.1.2.1.2.2.1.20       # ifOutErrors
-  - 1.3.6.1.2.1.31.1.1.1.6     # ifHCInOctets
-  - 1.3.6.1.2.1.31.1.1.1.10    # ifHCOutOctets
-  - 1.3.6.1.2.1.31.1.1.1.15    # ifHighSpeed
-  - .1.3.6.1.4.1.14823.2.2.1.5.2.1.7.1.9 # wlanAPBssidUpTime
-  - .1.3.6.1.4.1.14823.2.2.1.5.2.1.4.1.19 # wlanAPStatus
-  - .1.3.6.1.4.1.14823.2.2.1.5.2.1.4.1.13 # wlanAPModelName
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.2 # wlanAPNumClients
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.3 # wlanAPTxPkts
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.5 # wlanAPRxPkts
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.10 # wlanAPFrameRetryRate
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.15 # wlanAPFrameRetryErrorRate
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.16 # wlanAPFrameRetryErrorRate
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.17 # wlanAPFrameRetryErrorRate
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.1.1.1.27 # wlanAPFrameRetryErrorRate
-  - .1.3.6.1.4.1.14823.2.2.1.5.3.2.3.1 # wlsxWlanStaDATypeStatsEntry
-  metrics:
-  - name: aiAPMACAddress
-    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.1
-    type: PhysAddress48
-    help: Access Point MAC Address - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.1
-    indexes:
-    - labelname: aiAPMACAddress
-      type: PhysAddress48
-  - name: ifAdminStatus
-    oid: 1.3.6.1.2.1.2.2.1.7 
-    type: gauge
-    help: ifAdminStatus - 1.3.6.1.2.1.2.2.1.7 
-  - name: ifOperStatus
-    oid: 1.3.6.1.2.1.2.2.1.8 
-    type: gauge
-    help: interface operation Status - 1.3.6.1.2.1.2.2.1.8
-  - name: ifInErros
-    oid: 1.3.6.1.2.1.2.2.1.14 
-    type: gauge
-    help: interface input Error Count Status - 1.3.6.1.2.1.2.2.1.14 
-  - name: ifOutErros
-    oid: 1.3.6.1.2.1.2.2.1.20 
-    type: gauge
-    help: interface put Error Count Status - 1.3.6.1.2.1.2.2.1.20 
-  - name: ifHCInOctets
-    oid: 1.3.6.1.2.1.31.1.1.1.6  
-    type: gauge
-    help: interface input Packet Count Sum - 1.3.6.1.2.1.31.1.1.1.6  
-  - name: ifHCOutOctets
-    oid: 1.3.6.1.2.1.31.1.1.1.10 
-    type: gauge
-    help: interface output Packet Count Sum - 1.3.6.1.2.1.31.1.1.1.10 
-  - name: ifHighSpeed
-    oid: 1.3.6.1.2.1.31.1.1.1.15 
-    type: gauge
-    help: interface High Speed - 1.3.6.1.2.1.31.1.1.1.15 
-
-
-
-
-
-
-
-
- 
-
-
-
-  auth:
-    community: H09R1KU
-
-
