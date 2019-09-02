@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
    prometheus:
       image: prom/prometheus
@@ -30,6 +30,11 @@ services:
       restart: always
       environment:
         TZ: Asia/Tokyo
+
+   blackbox_exporter:
+      image: prome/blackbox-exporter
+      volumes:
+        - ./blackbox_exporter/config.yml:/etc/blackbox_exporter/config.yml
 
    grafana:
       image: grafana/grafana
