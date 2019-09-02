@@ -31,11 +31,6 @@ services:
       environment:
         TZ: Asia/Tokyo
 
-   blackbox_exporter:
-      image: prome/blackbox-exporter
-      volumes:
-        - ./blackbox_exporter/config.yml:/etc/blackbox_exporter/config.yml
-
    grafana:
       image: grafana/grafana
       ports:
