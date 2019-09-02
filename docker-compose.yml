@@ -31,18 +31,6 @@ services:
       environment:
         TZ: Asia/Tokyo
 
-   node_exporter:
-      image: quay.io/prometheus/node-exporter
-      ports: 
-         - "9100:9100"
-      volumes:
-         - /proc:/host/proc
-         - /sys:/host/sys
-         - /:/rootfs
-      environment:
-        TZ: Asia/Tokyo
-      restart: always
-
    grafana:
       image: grafana/grafana
       ports:
