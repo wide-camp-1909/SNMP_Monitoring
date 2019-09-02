@@ -26,46 +26,12 @@ scrape_configs:
        replacement: '${1}'
        action: labelmap
 
-  - job_name: 'aironet'
-    static_configs:
-      - labels:           
-          type: aironet
-        targets:           
-          - '192.168.4.2' # aironet
-    metrics_path: /snmp
-    params:       
-      module: [cisco_aironet]
-    relabel_configs:
-      - source_labels: [__address__]
-        target_label: __param_target
-      - source_labels: [__param_target]
-        target_label: instance
-      - target_label: __address__
-        replacement: 192.168.2.10:9116  # The SNMP exporter's real hostname:port.
-
-  - job_name: 'fortigate'
-    static_configs:
-      - labels:           
-          type: fortigate
-        targets:           
-          - '192.168.2.1' # fortigate
-    metrics_path: /snmp
-    params:       
-      module: [fortigate]
-    relabel_configs:
-      - source_labels: [__address__]
-        target_label: __param_target
-      - source_labels: [__param_target]
-        target_label: instance
-      - target_label: __address__
-        replacement: 192.168.2.10:9116  # The SNMP exporter's real hostname:port.
-
-  - job_name: '2960l'
+  - job_name: 'sw-noc-cisco'
     static_configs:
       - labels:
-          type: 2960l
+          type: sw-noc-cisco
         targets:
-          - '192.168.2.2' # cisco 2960l
+          - '172.16.1.6'
     metrics_path: /snmp
     params:
       module: [cisco_2960l]
@@ -75,5 +41,4 @@ scrape_configs:
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 192.168.2.10:9116  # The SNMP exporter's real hostname:port.
-
+        replacement: 192.168.2.10:9116 
