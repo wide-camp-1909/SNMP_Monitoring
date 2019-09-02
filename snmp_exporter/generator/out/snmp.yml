@@ -71,3 +71,19 @@ cisco:
       type: gauge
   auth:
     community: H09R1KU
+
+aruba:
+  walk:
+  - 1.3.6.1.4.1.14823.2.3.3.1.2
+  metrics:
+  - name: aiAPMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.1
+    type: PhysAddress48
+    help: Access Point MAC Address - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.1
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+  auth:
+    community: H09R1KU
+
+
