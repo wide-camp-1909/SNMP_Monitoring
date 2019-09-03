@@ -43,7 +43,7 @@ Linux hoge 4.15.0-58-generic #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019 x86_64 x
 ## 立ち上げ
 
 ```docker-compose.yml
-$docker-compose up 
+> docker-compose up 
 ```
 
 ## 確認
