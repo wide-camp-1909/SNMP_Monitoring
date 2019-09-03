@@ -13,6 +13,11 @@ services:
 
    blackbox_exporter:
      image: prom/blackbox-exporter
+     ports:
+         - "9115:9115"
+     restart: always
+     environment:
+        TZ: Asia/Tokyo
      volumes:
        - ./blackbox_exporter/config.yml:/etc/blackbox_expoter/config.yml
 
