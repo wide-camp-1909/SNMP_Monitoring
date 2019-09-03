@@ -51,6 +51,7 @@ services:
       environment:
         TZ: Asia/Tokyo
         GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
+        GF_INSTALL_PLUGINS: camptocamp-prometheus-alertmanager-datasource
 volumes:
    grafana:
      driver: local
