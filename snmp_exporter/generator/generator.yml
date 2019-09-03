@@ -11,9 +11,6 @@ modules:
       - 1.3.6.1.4.1.9.9.109.1.1.1.1.7 # cpmCPUTotal1minRev
       - 1.3.6.1.4.1.9.9.48.1.1.1.5 #ciscoMemoryPoolUsed
       - 1.3.6.1.4.1.9.9.48.1.1.1.6 # ciscoMemoryPoolFree
-      - ifIndex
-      - ifOperStatus
-      - ifAdminStatus
   aruba:
     auth:
       community: H09R1KU
@@ -248,3 +245,4 @@ modules:
       - wlsxTrapPortalServerAddress
       - wlsxTrapPortalServerDownReason
       - wlsxTrapStationBlackListReasonStr
+
