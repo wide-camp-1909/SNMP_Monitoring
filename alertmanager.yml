@@ -7,5 +7,5 @@ route:
 receivers:
  - name: alert-test
    slack_configs:
-     - api_url: https://hooks.slack.com/services/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
+     - api_url: https://hooks.slack.com/services/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
     
