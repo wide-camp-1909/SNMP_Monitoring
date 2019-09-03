@@ -50,3 +50,9 @@ Linux hoge 4.15.0-58-generic #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019 x86_64 x
 
 Prometheusのターゲットから疎通性があることを確認した.
 ![prometheus target](./img/prometheus.PNG)
+
+## dashboardのインポート
+
+Grafanaのアドレスにアクセスを行い、JSONファイルのインポートを行う。
+1909に使用されたDashboardのテンプレートは、Grafana_Dashboardディレクトリにまとめています。
+[参考](http://portaltan.hatenablog.com/entry/2016/05/27/092702)
