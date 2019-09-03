@@ -1,16 +1,372 @@
 # WARNING: This file was auto-generated using snmp_exporter generator, manual changes will be lost.
 aruba:
   walk:
-  - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
-  - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.7
-  - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.8
-  - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.4
-  - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.5
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.15
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.7
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.8
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.1
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.2
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.3
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.4
+  - 1.3.6.1.4.1.14823.2.3.3.1.2.5
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.1
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.10
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.100
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.101
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.102
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.103
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.104
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.105
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.106
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.107
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.108
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.11
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.12
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.13
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.130
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.131
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.132
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.133
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.138
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.139
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.14
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.140
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.141
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.142
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.144
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.15
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.16
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.17
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.18
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.19
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.2
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.20
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.21
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.22
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.23
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.24
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.25
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.26
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.27
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.28
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.29
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.3
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.30
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.31
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.32
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.33
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.34
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.35
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.36
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.37
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.38
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.39
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.4
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.40
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.41
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.42
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.43
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.44
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.45
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.46
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.47
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.48
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.49
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.5
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.50
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.51
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.52
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.53
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.54
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.55
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.56
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.57
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.58
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.59
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.6
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.60
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.61
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.62
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.63
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.64
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.65
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.66
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.67
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.68
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.69
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.7
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.70
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.71
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.72
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.73
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.74
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.75
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.76
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.77
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.78
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.79
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.8
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.80
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.81
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.82
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.83
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.84
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.85
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.86
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.87
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.88
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.89
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.9
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.90
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.91
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.92
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.93
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.94
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.95
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.96
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.97
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.98
+  - 1.3.6.1.4.1.14823.2.3.3.1.200.1.99
+  get:
+  - 1.3.6.1.2.1.1.5.0
+  - 1.3.6.1.2.1.1.6.0
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.1.0
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.2.0
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.3.0
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.4.0
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.5.0
+  - 1.3.6.1.4.1.14823.2.3.3.1.1.6.0
+  - 1.3.6.1.4.1.14823.2.3.3.1.3.1.0
   metrics:
-  - name: aiAPTotalMemory
-    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
+  - name: sysName
+    oid: 1.3.6.1.2.1.1.5
+    type: DisplayString
+    help: An administratively-assigned name for this managed node - 1.3.6.1.2.1.1.5
+  - name: sysLocation
+    oid: 1.3.6.1.2.1.1.6
+    type: DisplayString
+    help: The physical location of this node (e.g., 'telephone closet, 3rd floor')
+      - 1.3.6.1.2.1.1.6
+  - name: aiVirtualControllerKey
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.1
+    type: DisplayString
+    help: Unique Virtual Controller key - 1.3.6.1.4.1.14823.2.3.3.1.1.1
+  - name: aiMeshIndex
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.1
     type: gauge
-    help: Total amount of memory available in the AP in bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
+    help: Mesh Index - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.1
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshPointMac
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.2
+    type: PhysAddress48
+    help: Mesh Point Mac Address - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.2
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshPortalMac
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.3
+    type: DisplayString
+    help: Mesh Portal Mac Address - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.3
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshChannel
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.4
+    type: DisplayString
+    help: Mesh Channel - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.4
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshAvgRssi
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.5
+    type: gauge
+    help: Mesh Average RSSI - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.5
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshHops
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.6
+    type: gauge
+    help: Mesh Hops - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.6
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshAge
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.7
+    type: gauge
+    help: Mesh Age - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.7
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshCost
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.8
+    type: DisplayString
+    help: Mesh Cost - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.8
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiMeshRelation
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.9
+    type: DisplayString
+    help: Mesh Relation - 1.3.6.1.4.1.14823.2.3.3.1.1.15.1.9
+    indexes:
+    - labelname: aiMeshIndex
+      type: gauge
+  - name: aiVirtualControllerName
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.2
+    type: DisplayString
+    help: Virtual Controller name - 1.3.6.1.4.1.14823.2.3.3.1.1.2
+  - name: aiVirtualControllerOrganization
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.3
+    type: DisplayString
+    help: Virtual Controller organization - 1.3.6.1.4.1.14823.2.3.3.1.1.3
+  - name: aiVirtualControllerVersion
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.4
+    type: DisplayString
+    help: Software Version - 1.3.6.1.4.1.14823.2.3.3.1.1.4
+  - name: aiVirtualControllerIPAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.5
+    type: InetAddressIPv4
+    help: Virtual Controller IP Address - 1.3.6.1.4.1.14823.2.3.3.1.1.5
+  - name: aiMasterIPAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.6
+    type: InetAddressIPv4
+    help: IP Address of AP where virtual controller software is active - 1.3.6.1.4.1.14823.2.3.3.1.1.6
+  - name: aiSSIDIndex
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.1
+    type: gauge
+    help: SSID Index - 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.1
+    indexes:
+    - labelname: aiSSIDIndex
+      type: gauge
+  - name: aiSSID
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.2
+    type: OctetString
+    help: SSID - 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.2
+    indexes:
+    - labelname: aiSSIDIndex
+      type: gauge
+  - name: aiSSIDStatus
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.3
+    type: gauge
+    help: Indicates the whether the SSID is enabled(0) or disabled(1) - 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.3
+    indexes:
+    - labelname: aiSSIDIndex
+      type: gauge
+    enum_values:
+      0: enable
+      1: disable
+  - name: aiSSIDClientNum
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.4
+    type: gauge
+    help: Client Number of per SSID - 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.4
+    indexes:
+    - labelname: aiSSIDIndex
+      type: gauge
+  - name: aiSSIDHide
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.5
+    type: gauge
+    help: Indicates the whether the SSID is hide enabled(1) or disabled(0) - 1.3.6.1.4.1.14823.2.3.3.1.1.7.1.5
+    indexes:
+    - labelname: aiSSIDIndex
+      type: gauge
+    enum_values:
+      0: disable
+      1: enable
+  - name: aiInterferAPIndex
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.1
+    type: gauge
+    help: Interfer Access Point Index - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.1
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiInterferAPBSSID
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.2
+    type: PhysAddress48
+    help: Interfer Access Point MAC - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.2
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiInterferAPESSID
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.3
+    type: OctetString
+    help: Interfer Access Point ESSID - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.3
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiInterferAPChannel
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.4
+    type: DisplayString
+    help: Interfer Access Point Channel - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.4
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiInterferAPPhyType
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.5
+    type: DisplayString
+    help: Interfer Access Point Phy Type - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.5
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiInterferAPEncr
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.6
+    type: DisplayString
+    help: Interfer Access Point Encryption - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.6
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiInterferAPAvgSnr
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.7
+    type: gauge
+    help: Interfer Access Point Average Snr - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.7
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiInterferAPType
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.8
+    type: DisplayString
+    help: Interfer Access Point AP Type - 1.3.6.1.4.1.14823.2.3.3.1.1.8.1.8
+    indexes:
+    - labelname: aiInterferAPIndex
+      type: gauge
+  - name: aiAPMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.1
+    type: PhysAddress48
+    help: Access Point MAC Address - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.1
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPName
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.2
+    type: DisplayString
+    help: Access Point name - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.2
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPIPAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.3
+    type: InetAddressIPv4
+    help: Access Point IP Address - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.3
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPSerialNum
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.4
+    type: DisplayString
+    help: Access Point Serial Number - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.4
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPModelName
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.6
+    type: DisplayString
+    help: Access Point Model Name - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.6
     indexes:
     - labelname: aiAPMACAddress
       type: PhysAddress48
@@ -31,6 +387,86 @@ aruba:
     - labelname: aiAPMACAddress
       type: PhysAddress48
       fixed_size: 6
+  - name: aiAPUptime
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.9
+    type: gauge
+    help: Access Point uptime - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.9
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPTotalMemory
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
+    type: gauge
+    help: Total amount of memory available in the AP in bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.10
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiAPStatus
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.11
+    type: gauge
+    help: Indicates the Access Point Status - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.11
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    enum_values:
+      1: up
+      2: down
+  - name: aiAPHwopmode
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.12
+    type: gauge
+    help: AP HW OPMODE - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.12
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    enum_values:
+      0: default
+      1: rsdbsplit
+      2: rsdb5g
+      3: rsdb2g
+      4: dual5gon
+      5: dual5goff
+  - name: aiAPRole
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.13
+    type: DisplayString
+    help: AP State - 1.3.6.1.4.1.14823.2.3.3.1.2.1.1.13
+    indexes:
+    - labelname: aiAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiRadioAPMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.1
+    type: PhysAddress48
+    help: MAC Address of access point where this radio is active - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.1
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioIndex
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.2
+    type: gauge
+    help: Radio number - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.2
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.3
+    type: PhysAddress48
+    help: Radio MAC Address - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.3
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
   - name: aiRadioChannel
     oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.4
     type: DisplayString
@@ -51,6 +487,444 @@ aruba:
       fixed_size: 6
     - labelname: aiRadioIndex
       type: gauge
+  - name: aiRadioNoiseFloor
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.6
+    type: gauge
+    help: Radio noise floor in dBm - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.6
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioUtilization4
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.7
+    type: gauge
+    help: Radio channel utilization 4 second average - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.7
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioUtilization64
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.8
+    type: gauge
+    help: Radio channel utilization 64 second average - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.8
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioTxTotalFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.9
+    type: counter
+    help: Total transmitted frames - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.9
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioTxMgmtFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.10
+    type: counter
+    help: Transmitted management frames - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.10
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioTxDataFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.11
+    type: counter
+    help: Transmitted data frames - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.11
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioTxDataBytes
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.12
+    type: counter
+    help: Transmitted data bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.12
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioTxDrops
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.13
+    type: counter
+    help: Total frames dropped during transmission - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.13
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioRxTotalFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.14
+    type: counter
+    help: Total received frames - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.14
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioRxDataFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.15
+    type: counter
+    help: Received data frames - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.15
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioRxDataBytes
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.16
+    type: counter
+    help: Received data bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.16
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioRxMgmtFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.17
+    type: counter
+    help: Received management frames - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.17
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioRxBad
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.18
+    type: counter
+    help: Frames received in error - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.18
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioPhyEvents
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.19
+    type: counter
+    help: Number of phy events that indicates frames not received because of interference
+      - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.19
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioStatus
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.20
+    type: gauge
+    help: Radio state of AP - UP/DOWN - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.20
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+    enum_values:
+      1: up
+      2: down
+  - name: aiRadioClientNum
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.21
+    type: gauge
+    help: Client Number of per Radio - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.21
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiRadioMode
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.22
+    type: DisplayString
+    help: Radio state of AP - access/monitor - 1.3.6.1.4.1.14823.2.3.3.1.2.2.1.22
+    indexes:
+    - labelname: aiRadioAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiRadioIndex
+      type: gauge
+  - name: aiWlanAPMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.1
+    type: PhysAddress48
+    help: MAC Address of access point where WLAN is active - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.1
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanIndex
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.2
+    type: gauge
+    help: Index of WLAN - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.2
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanESSID
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.3
+    type: DisplayString
+    help: ESSID of WLAN - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.3
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.4
+    type: PhysAddress48
+    help: BSSID of WLAN - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.4
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanTxTotalFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.5
+    type: counter
+    help: Total transmitted frames - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.5
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanTxDataFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.6
+    type: counter
+    help: Transmitted data frames - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.6
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanTxDataBytes
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.7
+    type: counter
+    help: Transmitted data bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.7
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanRxTotalFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.8
+    type: counter
+    help: Total received frames - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.8
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanRxDataFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.9
+    type: counter
+    help: Received data frames - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.9
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiWlanRxDataBytes
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.10
+    type: counter
+    help: Received data bytes - 1.3.6.1.4.1.14823.2.3.3.1.2.3.1.10
+    indexes:
+    - labelname: aiWlanAPMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+    - labelname: aiWlanIndex
+      type: gauge
+  - name: aiClientMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.1
+    type: PhysAddress48
+    help: MAC Address of client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.1
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientWlanMACAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.2
+    type: PhysAddress48
+    help: BSSID of WLAN where client is associated - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.2
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientIPAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.3
+    type: InetAddressIPv4
+    help: Client IP Address - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.3
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientAPIPAddress
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.4
+    type: InetAddressIPv4
+    help: Associated Access Point IP Address - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.4
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientName
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.5
+    type: DisplayString
+    help: Name of user using the client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.5
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientOperatingSystem
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.6
+    type: DisplayString
+    help: Client operating system - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.6
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientSNR
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.7
+    type: gauge
+    help: Signal to noise ratio of client connection to the access point - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.7
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientTxDataFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.8
+    type: counter
+    help: Total frames transmitted by the client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.8
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientTxDataBytes
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.9
+    type: counter
+    help: Total bytes transmitted by the client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.9
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientTxRetries
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.10
+    type: counter
+    help: Total number of retry frames transmitted by the client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.10
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientTxRate
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.11
+    type: gauge
+    help: Transmit rate of client in mbps - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.11
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientRxDataFrames
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.12
+    type: counter
+    help: Total frames received by the client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.12
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientRxDataBytes
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.13
+    type: counter
+    help: Total bytes received by the client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.13
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientRxRetries
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.14
+    type: counter
+    help: Total number of retry frames received by the client - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.14
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientRxRate
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.15
+    type: gauge
+    help: Receive rate of client in mbps - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.15
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientUptime
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.16
+    type: gauge
+    help: Client uptime - 1.3.6.1.4.1.14823.2.3.3.1.2.4.1.16
+    indexes:
+    - labelname: aiClientMACAddress
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientMac
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.1
+    type: PhysAddress48
+    help: MAC address of voice client - 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.1
+    indexes:
+    - labelname: aiClientMac
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientIP
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.2
+    type: InetAddressIPv4
+    help: IP address of voice client - 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.2
+    indexes:
+    - labelname: aiClientMac
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientAPMac
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.3
+    type: PhysAddress48
+    help: MAC address of AP on which voice client is associated currently - 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.3
+    indexes:
+    - labelname: aiClientMac
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiClientAPName
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.4
+    type: DisplayString
+    help: Name of AP on which voice client is associated currently - 1.3.6.1.4.1.14823.2.3.3.1.2.5.1.4
+    indexes:
+    - labelname: aiClientMac
+      type: PhysAddress48
+      fixed_size: 6
+  - name: aiManagedModeSinceLastSync
+    oid: 1.3.6.1.4.1.14823.2.3.3.1.3.1
+    type: DisplayString
+    help: Time since last config was applied - 1.3.6.1.4.1.14823.2.3.3.1.3.1
   auth:
     community: H09R1KU
 cisco:
