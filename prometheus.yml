@@ -23,15 +23,30 @@ scrape_configs:
     static_configs:
       - targets:
         - 172.16.1.20
-        - 172.16.1.1
+        labels:
+          purpose: AP-controller
+      - targets:
         - 172.16.1.2
+        labels:
+          purpose: SW-EPS
+          parent: sw-bof
+      - targets:
         - 172.16.1.3
+        labels:
+          purpose: GS108PE
+          parent: sw-plenary
+      - targets:
         - 172.16.1.5
+        labels:
+          purpose: alaxala
+      - targets:
         - 172.16.1.6
+        labels:
+          purpose: cisco3560G 
+      - targets:
         - 172.16.1.7
-        - 172.16.1.11
-        - 172.16.1.12
-        - 172.16.1.13
+        labels:
+          purpose: hoge
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
