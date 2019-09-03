@@ -6,3 +6,9 @@ groups:
        for: 1m
        annotations:
          summary: '{{printf "%.2f" $value}} % of instances are up'
+
+  - name: ReachabilityLossAlert
+    rules:
+     - alert: ReachabilityLoss
+       expr: probe_success == 0
+       for: 2m
