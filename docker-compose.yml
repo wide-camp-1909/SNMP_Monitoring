@@ -50,6 +50,7 @@ services:
       restart: always
       environment:
         TZ: Asia/Tokyo
+        GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
 volumes:
    grafana:
      driver: local
