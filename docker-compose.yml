@@ -11,6 +11,11 @@ services:
       environment:
         TZ: Asia/Tokyo
 
+   blackbox_exporter:
+     image: prom/blackbox-exporter
+     volumes:
+       - ./blackbox_exporter/config.yml:/etc/blackbox_expoter/config.yml
+
    snmpexporter:
       image: prom/snmp-exporter
       ports:
