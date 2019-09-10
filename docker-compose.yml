@@ -52,6 +52,7 @@ services:
         TZ: Asia/Tokyo
         GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
         GF_INSTALL_PLUGINS: camptocamp-prometheus-alertmanager-datasource
+        GF_INSTALL_PLUGINS: raintank-worldping-app
 volumes:
    grafana:
      driver: local
