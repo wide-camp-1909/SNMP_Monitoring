@@ -13,7 +13,7 @@ alerting:
   alertmanagers:
   - static_configs:
     - targets:
-      - 172.16.1.117:9093
+      - 172.16.1.105:9093
 
 scrape_configs:
   - job_name: blackbox_icmp
@@ -47,17 +47,21 @@ scrape_configs:
         - 172.16.1.7
         labels:
           purpose: hoge
+      - targets:
+        - 1.1.1.1
+        labels:
+          purpose: Internet
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 172.16.1.117:9115
+        replacement: 172.16.1.105:9115
 
   - job_name: prometheus
     static_configs:
-      - targets: ['172.16.1.117:9090']
+      - targets: ['172.16.1.105:9090']
     relabel_configs:
      - source_labels: [job]
        target_label: job     
@@ -80,7 +84,7 @@ scrape_configs:
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 172.16.1.117:9116 
+        replacement: 172.16.1.105:9116 
 
   - job_name: 'AP-Controller'
     static_configs:
@@ -97,4 +101,4 @@ scrape_configs:
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 172.16.1.117:9116 
+        replacement: 172.16.1.105:9116 
